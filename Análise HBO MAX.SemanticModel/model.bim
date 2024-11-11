@@ -1,0 +1,1083 @@
+{
+  "compatibilityLevel": 1550,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"Full HBO Max Dataset\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.137.1102.0 (24.10)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "pt-BR",
+    "cultures": [
+      {
+        "name": "pt-BR",
+        "linguisticMetadata": {
+          "content": {
+            "Entities": {
+              "full_HBO_max_dataset": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Full HBO Max Dataset"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "full HBO max dataset": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "dataset": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "max dataset": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "HBO max dataset": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "complete hbo max dataset": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.599
+                    }
+                  },
+                  {
+                    "entire hbo max dataset": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.599
+                    }
+                  },
+                  {
+                    "whole hbo max dataset": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.599
+                    }
+                  },
+                  {
+                    "full hbo maximum dataset": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.599
+                    }
+                  },
+                  {
+                    "hbo maximum dataset": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "maximum dataset": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  }
+                ]
+              },
+              "full_HBO_max_dataset.genre": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Full HBO Max Dataset",
+                    "ConceptualProperty": "genres"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "genre": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "category": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "variety": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "genus": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "kind": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "field": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  }
+                ]
+              },
+              "full_HBO_max_dataset.imdb_average_rating": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Full HBO Max Dataset",
+                    "ConceptualProperty": "imdbAverageRating"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "imdb average rating": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "imdbAverageRating": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "imdb average assessment": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "imdb average evaluation": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "imdb average score": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "imdb average grade": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "imdb average ranking": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "imdb average mark": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "imdb average sailor": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.482
+                    }
+                  },
+                  {
+                    "imdb average seaman": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.482
+                    }
+                  },
+                  {
+                    "imdb average hand": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.468
+                    }
+                  }
+                ]
+              },
+              "full_HBO_max_dataset.imdb_id": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Full HBO Max Dataset",
+                    "ConceptualProperty": "imdbId"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "imdb id": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "imdbId": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "imdb identification": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "imdb identity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "imdb identifier": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "imdb credential": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  }
+                ]
+              },
+              "full_HBO_max_dataset.imdb_num_vote": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Full HBO Max Dataset",
+                    "ConceptualProperty": "imdbNumVotes"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "imdb num vote": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "imdbNumVotes": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "imdb number vote": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "imdb num division": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "imdb num ballot": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "imdb num election": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "imdb num poll": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  }
+                ]
+              },
+              "full_HBO_max_dataset.release_year": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Full HBO Max Dataset",
+                    "ConceptualProperty": "releaseYear"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "release year": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "releaseYear": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "year": {
+                      "State": "Generated",
+                      "Weight": 0.7
+                    }
+                  },
+                  {
+                    "release yr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  }
+                ]
+              },
+              "full_HBO_max_dataset.title": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Full HBO Max Dataset",
+                    "ConceptualProperty": "title"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "title": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "designation": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "award": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "call": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "heading": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "label": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "Filmes": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "full_HBO_max_dataset.type": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Full HBO Max Dataset",
+                    "ConceptualProperty": "type"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "type": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "category": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "manner": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "variety": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "brand": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "class": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "kind": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "style": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "form": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "grouping": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  }
+                ]
+              }
+            },
+            "Language": "en-US",
+            "Relationships": {
+              "full_HBO_max_dataset_has_genre": {
+                "Binding": {
+                  "ConceptualEntity": "Full HBO Max Dataset"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "full_HBO_max_dataset.genre"
+                      },
+                      "Subject": {
+                        "Role": "full_HBO_max_dataset"
+                      }
+                    },
+                    "ID": "full_HBO_max_datasets_have_genres",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "full_HBO_max_dataset": {
+                    "Target": {
+                      "Entity": "full_HBO_max_dataset"
+                    }
+                  },
+                  "full_HBO_max_dataset.genre": {
+                    "Target": {
+                      "Entity": "full_HBO_max_dataset.genre"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "full_HBO_max_dataset_has_imdb_average_rating": {
+                "Binding": {
+                  "ConceptualEntity": "Full HBO Max Dataset"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "full_HBO_max_dataset.imdb_average_rating"
+                      },
+                      "Subject": {
+                        "Role": "full_HBO_max_dataset"
+                      }
+                    },
+                    "ID": "full_HBO_max_datasets_have_imdb_average_rating",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "full_HBO_max_dataset": {
+                    "Target": {
+                      "Entity": "full_HBO_max_dataset"
+                    }
+                  },
+                  "full_HBO_max_dataset.imdb_average_rating": {
+                    "Target": {
+                      "Entity": "full_HBO_max_dataset.imdb_average_rating"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "full_HBO_max_dataset_has_imdb_id": {
+                "Binding": {
+                  "ConceptualEntity": "Full HBO Max Dataset"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "full_HBO_max_dataset.imdb_id"
+                      },
+                      "Subject": {
+                        "Role": "full_HBO_max_dataset"
+                      }
+                    },
+                    "ID": "full_HBO_max_datasets_have_imdb_ids",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "full_HBO_max_dataset": {
+                    "Target": {
+                      "Entity": "full_HBO_max_dataset"
+                    }
+                  },
+                  "full_HBO_max_dataset.imdb_id": {
+                    "Target": {
+                      "Entity": "full_HBO_max_dataset.imdb_id"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "full_HBO_max_dataset_has_imdb_num_vote": {
+                "Binding": {
+                  "ConceptualEntity": "Full HBO Max Dataset"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "full_HBO_max_dataset.imdb_num_vote"
+                      },
+                      "Subject": {
+                        "Role": "full_HBO_max_dataset"
+                      }
+                    },
+                    "ID": "full_HBO_max_datasets_have_imdb_num_votes",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "full_HBO_max_dataset": {
+                    "Target": {
+                      "Entity": "full_HBO_max_dataset"
+                    }
+                  },
+                  "full_HBO_max_dataset.imdb_num_vote": {
+                    "Target": {
+                      "Entity": "full_HBO_max_dataset.imdb_num_vote"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "full_HBO_max_dataset_has_release_year": {
+                "Binding": {
+                  "ConceptualEntity": "Full HBO Max Dataset"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "full_HBO_max_dataset.release_year"
+                      },
+                      "Subject": {
+                        "Role": "full_HBO_max_dataset"
+                      }
+                    },
+                    "ID": "full_HBO_max_datasets_have_release_years",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "full_HBO_max_dataset": {
+                    "Target": {
+                      "Entity": "full_HBO_max_dataset"
+                    }
+                  },
+                  "full_HBO_max_dataset.release_year": {
+                    "Target": {
+                      "Entity": "full_HBO_max_dataset.release_year"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "full_HBO_max_dataset_has_title": {
+                "Binding": {
+                  "ConceptualEntity": "Full HBO Max Dataset"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "full_HBO_max_dataset.title"
+                      },
+                      "Subject": {
+                        "Role": "full_HBO_max_dataset"
+                      }
+                    },
+                    "ID": "full_HBO_max_datasets_have_titles",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "full_HBO_max_dataset": {
+                    "Target": {
+                      "Entity": "full_HBO_max_dataset"
+                    }
+                  },
+                  "full_HBO_max_dataset.title": {
+                    "Target": {
+                      "Entity": "full_HBO_max_dataset.title"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "full_HBO_max_dataset_has_type": {
+                "Binding": {
+                  "ConceptualEntity": "Full HBO Max Dataset"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "full_HBO_max_dataset.type"
+                      },
+                      "Subject": {
+                        "Role": "full_HBO_max_dataset"
+                      }
+                    },
+                    "ID": "full_HBO_max_datasets_have_types",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "full_HBO_max_dataset": {
+                    "Target": {
+                      "Entity": "full_HBO_max_dataset"
+                    }
+                  },
+                  "full_HBO_max_dataset.type": {
+                    "Target": {
+                      "Entity": "full_HBO_max_dataset.type"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "full_HBO_max_dataset_is_released_in_release_year": {
+                "Binding": {
+                  "ConceptualEntity": "Full HBO Max Dataset"
+                },
+                "Phrasings": [
+                  {
+                    "ID": "full_HBO_max_datasets_are_released_on_release_years",
+                    "State": "Generated",
+                    "Verb": {
+                      "Object": {
+                        "Role": "full_HBO_max_dataset"
+                      },
+                      "Verbs": [
+                        {
+                          "release": {
+                            "State": "Generated"
+                          }
+                        }
+                      ]
+                    },
+                    "Weight": 0.9
+                  }
+                ],
+                "Roles": {
+                  "full_HBO_max_dataset": {
+                    "Target": {
+                      "Entity": "full_HBO_max_dataset"
+                    }
+                  },
+                  "full_HBO_max_dataset.release_year": {
+                    "Target": {
+                      "Entity": "full_HBO_max_dataset.release_year"
+                    }
+                  }
+                },
+                "SemanticSlots": {
+                  "When": {
+                    "Role": "full_HBO_max_dataset.release_year"
+                  }
+                },
+                "State": "Generated"
+              }
+            },
+            "Version": "3.5.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "pt-BR",
+    "tables": [
+      {
+        "name": "Full HBO Max Dataset",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "title",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "de27b728-bfdb-4ae7-8704-d5a8a462b45a",
+            "sourceColumn": "title",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "type",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "762a41d0-33d0-48a8-9420-a6dc1220e3ed",
+            "sourceColumn": "type",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "imdbId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c79fabf4-eb51-47ba-bfe7-2a4f1737b43f",
+            "sourceColumn": "imdbId",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "imdbAverageRating",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e9787a81-76b9-4443-a71b-143702d40ef2",
+            "sourceColumn": "imdbAverageRating",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "genres",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "217e5db7-7b52-4a8d-acce-94169ba01e19",
+            "sourceColumn": "genres",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "imdbNumVotes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "3a6ad233-8823-4fce-b39a-7e60fc403ad5",
+            "sourceColumn": "imdbNumVotes",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "releaseYear",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "1a98861a-f72a-4038-a77f-33b80caaa0fb",
+            "sourceColumn": "releaseYear",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "cae53c4d-6313-47f0-ba3a-09a515bc5233",
+        "partitions": [
+          {
+            "name": "Full HBO Max Dataset",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Folder.Files(\"C:\\Users\\55397362816\\Desktop\\db\"),",
+                "    #\"Outras Colunas Removidas\" = Table.SelectColumns(Fonte,{\"Content\"}),",
+                "    #\"Personalização Adicionada\" = Table.AddColumn(#\"Outras Colunas Removidas\", \"Personalizar\", each Csv.Document([Content])),",
+                "    #\"Outras Colunas Removidas1\" = Table.SelectColumns(#\"Personalização Adicionada\",{\"Personalizar\"}),",
+                "    Personalizar = #\"Outras Colunas Removidas1\"{0}[Personalizar],",
+                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Personalizar, [PromoteAllScalars=true]),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Cabeçalhos Promovidos\",{{\"title\", type text}, {\"type\", type text}, {\"genres\", type text}, {\"releaseYear\", Int64.Type}, {\"imdbId\", type text}, {\"imdbAverageRating\", Int64.Type}, {\"imdbNumVotes\", Int64.Type}, {\"availableCountries\", type text}}),",
+                "    #\"Outras Colunas Removidas2\" = Table.SelectColumns(#\"Tipo Alterado\",{\"title\", \"type\", \"imdbId\", \"imdbAverageRating\", \"genres\", \"imdbNumVotes\", \"releaseYear\"})",
+                "in",
+                "    #\"Outras Colunas Removidas2\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

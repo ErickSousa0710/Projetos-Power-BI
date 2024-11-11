@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Análise HBO MAX"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "084ef059-b04e-41ca-a025-2d000b215c02"
+  }
+}
