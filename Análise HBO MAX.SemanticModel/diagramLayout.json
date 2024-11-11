@@ -10,12 +10,38 @@
       "nodes": [
         {
           "location": {
-            "x": 0,
+            "x": 568,
             "y": 0
           },
-          "nodeIndex": "Full HBO Max Dataset",
+          "nodeIndex": "db",
           "size": {
             "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 12
+          },
+          "nodeIndex": "HBO",
+          "nodeLineageTag": "9a67270b-43d7-414d-8a60-6911da8ab1d0",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 284,
+            "y": 12
+          },
+          "nodeIndex": "NETFLIX",
+          "nodeLineageTag": "8ff849e0-9c03-4aa6-a830-2b481bf72c6b",
+          "size": {
+            "height": 200,
             "width": 234
           },
           "zIndex": 0

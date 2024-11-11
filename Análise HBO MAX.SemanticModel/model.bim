@@ -1,10 +1,10 @@
 {
-  "compatibilityLevel": 1550,
+  "compatibilityLevel": 1567,
   "model": {
     "annotations": [
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"Full HBO Max Dataset\"]"
+        "value": "[\"db\",\"HBO\",\"NETFLIX\"]"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -29,100 +29,98 @@
               "full_HBO_max_dataset": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Full HBO Max Dataset"
+                    "ConceptualEntity": "db"
                   }
                 },
                 "State": "Generated",
                 "Terms": [
                   {
-                    "full HBO max dataset": {
+                    "db": {
+                      "State": "Generated"
+                    }
+                  }
+                ],
+                "Visibility": {
+                  "Value": "Hidden"
+                }
+              },
+              "full_HBO_max_dataset.name": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "db",
+                    "ConceptualProperty": "Name"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "name": {
                       "State": "Generated"
                     }
                   },
                   {
-                    "dataset": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "max dataset": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "HBO max dataset": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
-                    "complete hbo max dataset": {
+                    "label": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.599
+                      "Weight": 0.714
                     }
                   },
                   {
-                    "entire hbo max dataset": {
+                    "tag": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.599
+                      "Weight": 0.714
                     }
-                  },
+                  }
+                ],
+                "Visibility": {
+                  "Value": "Hidden"
+                }
+              },
+              "full_HBO_max_dataset.personalizar": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "db",
+                    "ConceptualProperty": "Personalizar"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
                   {
-                    "whole hbo max dataset": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.599
+                    "personalizar": {
+                      "State": "Generated"
                     }
-                  },
+                  }
+                ],
+                "Visibility": {
+                  "Value": "Hidden"
+                }
+              },
+              "hbo": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "HBO"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
                   {
-                    "full hbo maximum dataset": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.599
-                    }
-                  },
-                  {
-                    "hbo maximum dataset": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.591
-                    }
-                  },
-                  {
-                    "maximum dataset": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.582
+                    "hbo": {
+                      "State": "Generated"
                     }
                   }
                 ]
               },
-              "full_HBO_max_dataset.genre": {
+              "hbo.genre": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Full HBO Max Dataset",
+                    "ConceptualEntity": "HBO",
                     "ConceptualProperty": "genres"
                   }
                 },
@@ -182,13 +180,23 @@
                       "Type": "Noun",
                       "Weight": 0.476
                     }
+                  },
+                  {
+                    "Gênero": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
                   }
                 ]
               },
-              "full_HBO_max_dataset.imdb_average_rating": {
+              "hbo.imdb_average_rating": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Full HBO Max Dataset",
+                    "ConceptualEntity": "HBO",
                     "ConceptualProperty": "imdbAverageRating"
                   }
                 },
@@ -298,146 +306,10 @@
                   }
                 ]
               },
-              "full_HBO_max_dataset.imdb_id": {
+              "hbo.release_year": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Full HBO Max Dataset",
-                    "ConceptualProperty": "imdbId"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "imdb id": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "imdbId": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "imdb identification": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.75
-                    }
-                  },
-                  {
-                    "imdb identity": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.75
-                    }
-                  },
-                  {
-                    "imdb identifier": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.75
-                    }
-                  },
-                  {
-                    "imdb credential": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.727
-                    }
-                  }
-                ]
-              },
-              "full_HBO_max_dataset.imdb_num_vote": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Full HBO Max Dataset",
-                    "ConceptualProperty": "imdbNumVotes"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "imdb num vote": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "imdbNumVotes": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "imdb number vote": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.591
-                    }
-                  },
-                  {
-                    "imdb num division": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.508
-                    }
-                  },
-                  {
-                    "imdb num ballot": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.492
-                    }
-                  },
-                  {
-                    "imdb num election": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.492
-                    }
-                  },
-                  {
-                    "imdb num poll": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.492
-                    }
-                  }
-                ]
-              },
-              "full_HBO_max_dataset.release_year": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Full HBO Max Dataset",
+                    "ConceptualEntity": "HBO",
                     "ConceptualProperty": "releaseYear"
                   }
                 },
@@ -474,10 +346,10 @@
                   }
                 ]
               },
-              "full_HBO_max_dataset.title": {
+              "hbo.title": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Full HBO Max Dataset",
+                    "ConceptualEntity": "HBO",
                     "ConceptualProperty": "title"
                   }
                 },
@@ -539,7 +411,7 @@
                     }
                   },
                   {
-                    "Filmes": {
+                    "Título": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -550,10 +422,416 @@
                   }
                 ]
               },
-              "full_HBO_max_dataset.type": {
+              "hbo.type": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Full HBO Max Dataset",
+                    "ConceptualEntity": "HBO",
+                    "ConceptualProperty": "type"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "type": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "category": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "manner": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "variety": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "brand": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "class": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "kind": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "style": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "form": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "grouping": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  }
+                ]
+              },
+              "netflix": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "NETFLIX"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "netflix": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "netflix.genre": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "NETFLIX",
+                    "ConceptualProperty": "genres"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "genre": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "category": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "variety": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "genus": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "kind": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "field": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  }
+                ]
+              },
+              "netflix.imdb_average_rating": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "NETFLIX",
+                    "ConceptualProperty": "imdbAverageRating"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "imdb average rating": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "imdbAverageRating": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "imdb average assessment": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "imdb average evaluation": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "imdb average score": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "imdb average grade": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "imdb average ranking": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "imdb average mark": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.492
+                    }
+                  },
+                  {
+                    "imdb average sailor": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.482
+                    }
+                  },
+                  {
+                    "imdb average seaman": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.482
+                    }
+                  },
+                  {
+                    "imdb average hand": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.468
+                    }
+                  }
+                ]
+              },
+              "netflix.release_year": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "NETFLIX",
+                    "ConceptualProperty": "releaseYear"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "release year": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "releaseYear": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "year": {
+                      "State": "Generated",
+                      "Weight": 0.7
+                    }
+                  },
+                  {
+                    "release yr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  }
+                ]
+              },
+              "netflix.title": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "NETFLIX",
+                    "ConceptualProperty": "title"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "title": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "designation": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "award": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "call": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "heading": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "label": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  }
+                ]
+              },
+              "netflix.type": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "NETFLIX",
                     "ConceptualProperty": "type"
                   }
                 },
@@ -659,248 +937,182 @@
             },
             "Language": "en-US",
             "Relationships": {
-              "full_HBO_max_dataset_has_genre": {
+              "hbo_has_genre": {
                 "Binding": {
-                  "ConceptualEntity": "Full HBO Max Dataset"
+                  "ConceptualEntity": "HBO"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "full_HBO_max_dataset.genre"
+                        "Role": "hbo.genre"
                       },
                       "Subject": {
-                        "Role": "full_HBO_max_dataset"
+                        "Role": "hbo"
                       }
                     },
-                    "ID": "full_HBO_max_datasets_have_genres",
+                    "ID": "hbo_have_genres",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "full_HBO_max_dataset": {
+                  "hbo": {
                     "Target": {
-                      "Entity": "full_HBO_max_dataset"
+                      "Entity": "hbo"
                     }
                   },
-                  "full_HBO_max_dataset.genre": {
+                  "hbo.genre": {
                     "Target": {
-                      "Entity": "full_HBO_max_dataset.genre"
+                      "Entity": "hbo.genre"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "full_HBO_max_dataset_has_imdb_average_rating": {
+              "hbo_has_imdb_average_rating": {
                 "Binding": {
-                  "ConceptualEntity": "Full HBO Max Dataset"
+                  "ConceptualEntity": "HBO"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "full_HBO_max_dataset.imdb_average_rating"
+                        "Role": "hbo.imdb_average_rating"
                       },
                       "Subject": {
-                        "Role": "full_HBO_max_dataset"
+                        "Role": "hbo"
                       }
                     },
-                    "ID": "full_HBO_max_datasets_have_imdb_average_rating",
+                    "ID": "hbo_have_imdb_average_rating",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "full_HBO_max_dataset": {
+                  "hbo": {
                     "Target": {
-                      "Entity": "full_HBO_max_dataset"
+                      "Entity": "hbo"
                     }
                   },
-                  "full_HBO_max_dataset.imdb_average_rating": {
+                  "hbo.imdb_average_rating": {
                     "Target": {
-                      "Entity": "full_HBO_max_dataset.imdb_average_rating"
+                      "Entity": "hbo.imdb_average_rating"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "full_HBO_max_dataset_has_imdb_id": {
+              "hbo_has_release_year": {
                 "Binding": {
-                  "ConceptualEntity": "Full HBO Max Dataset"
+                  "ConceptualEntity": "HBO"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "full_HBO_max_dataset.imdb_id"
+                        "Role": "hbo.release_year"
                       },
                       "Subject": {
-                        "Role": "full_HBO_max_dataset"
+                        "Role": "hbo"
                       }
                     },
-                    "ID": "full_HBO_max_datasets_have_imdb_ids",
+                    "ID": "hbo_have_release_years",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "full_HBO_max_dataset": {
+                  "hbo": {
                     "Target": {
-                      "Entity": "full_HBO_max_dataset"
+                      "Entity": "hbo"
                     }
                   },
-                  "full_HBO_max_dataset.imdb_id": {
+                  "hbo.release_year": {
                     "Target": {
-                      "Entity": "full_HBO_max_dataset.imdb_id"
+                      "Entity": "hbo.release_year"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "full_HBO_max_dataset_has_imdb_num_vote": {
+              "hbo_has_title": {
                 "Binding": {
-                  "ConceptualEntity": "Full HBO Max Dataset"
+                  "ConceptualEntity": "HBO"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "full_HBO_max_dataset.imdb_num_vote"
+                        "Role": "hbo.title"
                       },
                       "Subject": {
-                        "Role": "full_HBO_max_dataset"
+                        "Role": "hbo"
                       }
                     },
-                    "ID": "full_HBO_max_datasets_have_imdb_num_votes",
+                    "ID": "hbo_have_titles",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "full_HBO_max_dataset": {
+                  "hbo": {
                     "Target": {
-                      "Entity": "full_HBO_max_dataset"
+                      "Entity": "hbo"
                     }
                   },
-                  "full_HBO_max_dataset.imdb_num_vote": {
+                  "hbo.title": {
                     "Target": {
-                      "Entity": "full_HBO_max_dataset.imdb_num_vote"
+                      "Entity": "hbo.title"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "full_HBO_max_dataset_has_release_year": {
+              "hbo_has_type": {
                 "Binding": {
-                  "ConceptualEntity": "Full HBO Max Dataset"
+                  "ConceptualEntity": "HBO"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "full_HBO_max_dataset.release_year"
+                        "Role": "hbo.type"
                       },
                       "Subject": {
-                        "Role": "full_HBO_max_dataset"
+                        "Role": "hbo"
                       }
                     },
-                    "ID": "full_HBO_max_datasets_have_release_years",
+                    "ID": "hbo_have_types",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "full_HBO_max_dataset": {
+                  "hbo": {
                     "Target": {
-                      "Entity": "full_HBO_max_dataset"
+                      "Entity": "hbo"
                     }
                   },
-                  "full_HBO_max_dataset.release_year": {
+                  "hbo.type": {
                     "Target": {
-                      "Entity": "full_HBO_max_dataset.release_year"
+                      "Entity": "hbo.type"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "full_HBO_max_dataset_has_title": {
+              "hbo_is_released_in_release_year": {
                 "Binding": {
-                  "ConceptualEntity": "Full HBO Max Dataset"
+                  "ConceptualEntity": "HBO"
                 },
                 "Phrasings": [
                   {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "full_HBO_max_dataset.title"
-                      },
-                      "Subject": {
-                        "Role": "full_HBO_max_dataset"
-                      }
-                    },
-                    "ID": "full_HBO_max_datasets_have_titles",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "full_HBO_max_dataset": {
-                    "Target": {
-                      "Entity": "full_HBO_max_dataset"
-                    }
-                  },
-                  "full_HBO_max_dataset.title": {
-                    "Target": {
-                      "Entity": "full_HBO_max_dataset.title"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "full_HBO_max_dataset_has_type": {
-                "Binding": {
-                  "ConceptualEntity": "Full HBO Max Dataset"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "full_HBO_max_dataset.type"
-                      },
-                      "Subject": {
-                        "Role": "full_HBO_max_dataset"
-                      }
-                    },
-                    "ID": "full_HBO_max_datasets_have_types",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "full_HBO_max_dataset": {
-                    "Target": {
-                      "Entity": "full_HBO_max_dataset"
-                    }
-                  },
-                  "full_HBO_max_dataset.type": {
-                    "Target": {
-                      "Entity": "full_HBO_max_dataset.type"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "full_HBO_max_dataset_is_released_in_release_year": {
-                "Binding": {
-                  "ConceptualEntity": "Full HBO Max Dataset"
-                },
-                "Phrasings": [
-                  {
-                    "ID": "full_HBO_max_datasets_are_released_on_release_years",
+                    "ID": "hbo_are_released_on_release_years",
                     "State": "Generated",
                     "Verb": {
                       "Object": {
-                        "Role": "full_HBO_max_dataset"
+                        "Role": "hbo"
                       },
                       "Verbs": [
                         {
@@ -914,20 +1126,227 @@
                   }
                 ],
                 "Roles": {
-                  "full_HBO_max_dataset": {
+                  "hbo": {
                     "Target": {
-                      "Entity": "full_HBO_max_dataset"
+                      "Entity": "hbo"
                     }
                   },
-                  "full_HBO_max_dataset.release_year": {
+                  "hbo.release_year": {
                     "Target": {
-                      "Entity": "full_HBO_max_dataset.release_year"
+                      "Entity": "hbo.release_year"
                     }
                   }
                 },
                 "SemanticSlots": {
                   "When": {
-                    "Role": "full_HBO_max_dataset.release_year"
+                    "Role": "hbo.release_year"
+                  }
+                },
+                "State": "Generated"
+              },
+              "netflix_has_genre": {
+                "Binding": {
+                  "ConceptualEntity": "NETFLIX"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "netflix.genre"
+                      },
+                      "Subject": {
+                        "Role": "netflix"
+                      }
+                    },
+                    "ID": "netflix_have_genres",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "netflix": {
+                    "Target": {
+                      "Entity": "netflix"
+                    }
+                  },
+                  "netflix.genre": {
+                    "Target": {
+                      "Entity": "netflix.genre"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "netflix_has_imdb_average_rating": {
+                "Binding": {
+                  "ConceptualEntity": "NETFLIX"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "netflix.imdb_average_rating"
+                      },
+                      "Subject": {
+                        "Role": "netflix"
+                      }
+                    },
+                    "ID": "netflix_have_imdb_average_rating",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "netflix": {
+                    "Target": {
+                      "Entity": "netflix"
+                    }
+                  },
+                  "netflix.imdb_average_rating": {
+                    "Target": {
+                      "Entity": "netflix.imdb_average_rating"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "netflix_has_release_year": {
+                "Binding": {
+                  "ConceptualEntity": "NETFLIX"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "netflix.release_year"
+                      },
+                      "Subject": {
+                        "Role": "netflix"
+                      }
+                    },
+                    "ID": "netflix_have_release_years",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "netflix": {
+                    "Target": {
+                      "Entity": "netflix"
+                    }
+                  },
+                  "netflix.release_year": {
+                    "Target": {
+                      "Entity": "netflix.release_year"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "netflix_has_title": {
+                "Binding": {
+                  "ConceptualEntity": "NETFLIX"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "netflix.title"
+                      },
+                      "Subject": {
+                        "Role": "netflix"
+                      }
+                    },
+                    "ID": "netflix_have_titles",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "netflix": {
+                    "Target": {
+                      "Entity": "netflix"
+                    }
+                  },
+                  "netflix.title": {
+                    "Target": {
+                      "Entity": "netflix.title"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "netflix_has_type": {
+                "Binding": {
+                  "ConceptualEntity": "NETFLIX"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "netflix.type"
+                      },
+                      "Subject": {
+                        "Role": "netflix"
+                      }
+                    },
+                    "ID": "netflix_have_types",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "netflix": {
+                    "Target": {
+                      "Entity": "netflix"
+                    }
+                  },
+                  "netflix.type": {
+                    "Target": {
+                      "Entity": "netflix.type"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "netflix_is_released_in_release_year": {
+                "Binding": {
+                  "ConceptualEntity": "NETFLIX"
+                },
+                "Phrasings": [
+                  {
+                    "ID": "netflix_are_released_on_release_years",
+                    "State": "Generated",
+                    "Verb": {
+                      "Object": {
+                        "Role": "netflix"
+                      },
+                      "Verbs": [
+                        {
+                          "release": {
+                            "State": "Generated"
+                          }
+                        }
+                      ]
+                    },
+                    "Weight": 0.9
+                  }
+                ],
+                "Roles": {
+                  "netflix": {
+                    "Target": {
+                      "Entity": "netflix"
+                    }
+                  },
+                  "netflix.release_year": {
+                    "Target": {
+                      "Entity": "netflix.release_year"
+                    }
+                  }
+                },
+                "SemanticSlots": {
+                  "When": {
+                    "Role": "netflix.release_year"
                   }
                 },
                 "State": "Generated"
@@ -947,7 +1366,85 @@
     "sourceQueryCulture": "pt-BR",
     "tables": [
       {
-        "name": "Full HBO Max Dataset",
+        "name": "db",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "changedProperties": [
+          {
+            "property": "IsHidden"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "56a40a22-ddee-4226-bf34-20171d6b2298",
+            "sourceColumn": "Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Personalizar",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "2548ba4d-37c4-4b4d-917e-f6e13cccab9a",
+            "sourceColumn": "Personalizar",
+            "summarizeBy": "none"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "cae53c4d-6313-47f0-ba3a-09a515bc5233",
+        "partitions": [
+          {
+            "name": "db",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Folder.Files(\"C:\\Users\\55397362816\\Desktop\\db\"),",
+                "    #\"Outras Colunas Removidas\" = Table.SelectColumns(Fonte,{\"Name\", \"Content\"}),",
+                "    #\"Personalização Adicionada\" = Table.AddColumn(#\"Outras Colunas Removidas\", \"Personalizar\", each Csv.Document([Content])),",
+                "    #\"Outras Colunas Removidas1\" = Table.SelectColumns(#\"Personalização Adicionada\",{\"Name\", \"Personalizar\"})",
+                "in",
+                "    #\"Outras Colunas Removidas1\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "HBO",
         "annotations": [
           {
             "name": "PBI_NavigationStepName",
@@ -968,7 +1465,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "de27b728-bfdb-4ae7-8704-d5a8a462b45a",
+            "lineageTag": "ca97c01f-50f2-4156-b13c-a664070a3f2f",
             "sourceColumn": "title",
             "summarizeBy": "none"
           },
@@ -981,36 +1478,9 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "762a41d0-33d0-48a8-9420-a6dc1220e3ed",
+            "lineageTag": "de67316c-dbab-4af0-b9aa-d779c1757d76",
             "sourceColumn": "type",
             "summarizeBy": "none"
-          },
-          {
-            "name": "imdbId",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "c79fabf4-eb51-47ba-bfe7-2a4f1737b43f",
-            "sourceColumn": "imdbId",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "imdbAverageRating",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "e9787a81-76b9-4443-a71b-143702d40ef2",
-            "sourceColumn": "imdbAverageRating",
-            "summarizeBy": "sum"
           },
           {
             "name": "genres",
@@ -1021,23 +1491,9 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "217e5db7-7b52-4a8d-acce-94169ba01e19",
+            "lineageTag": "2989e4f5-f48d-431f-99fc-2ca192801651",
             "sourceColumn": "genres",
             "summarizeBy": "none"
-          },
-          {
-            "name": "imdbNumVotes",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "3a6ad233-8823-4fce-b39a-7e60fc403ad5",
-            "sourceColumn": "imdbNumVotes",
-            "summarizeBy": "sum"
           },
           {
             "name": "releaseYear",
@@ -1049,29 +1505,142 @@
             ],
             "dataType": "int64",
             "formatString": "0",
-            "lineageTag": "1a98861a-f72a-4038-a77f-33b80caaa0fb",
+            "lineageTag": "67c83137-15fc-45b9-9e01-78ea1a90b7ab",
             "sourceColumn": "releaseYear",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "imdbAverageRating",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "322df489-e00d-46db-9eb6-a8af91d663f4",
+            "sourceColumn": "imdbAverageRating",
             "summarizeBy": "sum"
           }
         ],
-        "lineageTag": "cae53c4d-6313-47f0-ba3a-09a515bc5233",
+        "lineageTag": "9a67270b-43d7-414d-8a60-6911da8ab1d0",
         "partitions": [
           {
-            "name": "Full HBO Max Dataset",
+            "name": "HBO",
             "mode": "import",
             "source": {
               "expression": [
                 "let",
-                "    Fonte = Folder.Files(\"C:\\Users\\55397362816\\Desktop\\db\"),",
-                "    #\"Outras Colunas Removidas\" = Table.SelectColumns(Fonte,{\"Content\"}),",
-                "    #\"Personalização Adicionada\" = Table.AddColumn(#\"Outras Colunas Removidas\", \"Personalizar\", each Csv.Document([Content])),",
-                "    #\"Outras Colunas Removidas1\" = Table.SelectColumns(#\"Personalização Adicionada\",{\"Personalizar\"}),",
-                "    Personalizar = #\"Outras Colunas Removidas1\"{0}[Personalizar],",
+                "    Fonte = db,",
+                "    Personalizar = Fonte{0}[Personalizar],",
                 "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Personalizar, [PromoteAllScalars=true]),",
                 "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Cabeçalhos Promovidos\",{{\"title\", type text}, {\"type\", type text}, {\"genres\", type text}, {\"releaseYear\", Int64.Type}, {\"imdbId\", type text}, {\"imdbAverageRating\", Int64.Type}, {\"imdbNumVotes\", Int64.Type}, {\"availableCountries\", type text}}),",
-                "    #\"Outras Colunas Removidas2\" = Table.SelectColumns(#\"Tipo Alterado\",{\"title\", \"type\", \"imdbId\", \"imdbAverageRating\", \"genres\", \"imdbNumVotes\", \"releaseYear\"})",
+                "    #\"Outras Colunas Removidas\" = Table.SelectColumns(#\"Tipo Alterado\",{\"title\", \"type\", \"genres\", \"releaseYear\", \"imdbAverageRating\"})",
                 "in",
-                "    #\"Outras Colunas Removidas2\""
+                "    #\"Outras Colunas Removidas\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "NETFLIX",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "title",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "134c12e4-d210-4c91-b6b0-9e9c25d8ec87",
+            "sourceColumn": "title",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "type",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "05965e1f-b7c5-44af-9808-1c47f63824f8",
+            "sourceColumn": "type",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "genres",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "22fc271c-5caa-4ba7-b47f-fd673237819b",
+            "sourceColumn": "genres",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "releaseYear",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "816e1de8-e499-41c8-aff1-20d34733185b",
+            "sourceColumn": "releaseYear",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "imdbAverageRating",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "0be4435e-5083-4163-a40e-c8738d7fc7b5",
+            "sourceColumn": "imdbAverageRating",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "8ff849e0-9c03-4aa6-a830-2b481bf72c6b",
+        "partitions": [
+          {
+            "name": "NETFLIX",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = db,",
+                "    Personalizar = Fonte{1}[Personalizar],",
+                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Personalizar, [PromoteAllScalars=true]),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Cabeçalhos Promovidos\",{{\"title\", type text}, {\"type\", type text}, {\"genres\", type text}, {\"releaseYear\", Int64.Type}, {\"imdbId\", type text}, {\"imdbAverageRating\", Int64.Type}, {\"imdbNumVotes\", Int64.Type}, {\"availableCountries\", type text}}),",
+                "    #\"Outras Colunas Removidas\" = Table.SelectColumns(#\"Tipo Alterado\",{\"title\", \"type\", \"genres\", \"releaseYear\", \"imdbAverageRating\"})",
+                "in",
+                "    #\"Outras Colunas Removidas\""
               ],
               "type": "m"
             }
