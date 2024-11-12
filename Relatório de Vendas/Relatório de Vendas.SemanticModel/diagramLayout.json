@@ -1,0 +1,151 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 518.46091790827677,
+        "y": 71.779183417578338
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 912.22343001934166,
+            "y": 215.75659912997332
+          },
+          "nodeIndex": "Clientes",
+          "nodeLineageTag": "34687bdc-e624-4597-96af-8a1a94dd567b",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 1196.2234300193418,
+            "y": 277.75659912997332
+          },
+          "nodeIndex": "db",
+          "nodeLineageTag": "11a370e8-ae29-4543-91d5-31fbd1092a19",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 184.83723679386981,
+            "y": -10
+          },
+          "nodeIndex": "Devolução",
+          "nodeLineageTag": "20204b0d-fe63-4c98-a2a2-45a1635bd57f",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 472.11116574792158,
+            "y": -9.4441818571066278
+          },
+          "nodeIndex": "Localidades",
+          "nodeLineageTag": "1eb5388b-3ef9-4186-881a-61201cd73266",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 638.22343001934178,
+            "y": 193.58863845218661
+          },
+          "nodeIndex": "Lojas",
+          "nodeLineageTag": "b3be3f35-759c-41ad-bb1e-7121936d4412",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 10,
+            "y": 245.67547890848573
+          },
+          "nodeIndex": "Produtos",
+          "nodeLineageTag": "8b5427e7-72b9-40e9-b5bb-fe85f34aba8d",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 396.97336785359659,
+            "y": 497.51319825994659
+          },
+          "nodeIndex": "Vendas",
+          "nodeLineageTag": "e50af43a-e616-4bd9-8769-9c7623e0065b",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 16.817540462109037,
+            "y": 518.22999727349827
+          },
+          "nodeIndex": "dCalendario",
+          "nodeLineageTag": "b67634cc-410d-4feb-b6b4-82b3612ea1a2",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1744.2234300193418,
+            "y": 313.75659912997332
+          },
+          "nodeIndex": "Medidas",
+          "nodeLineageTag": "85703fed-bfb8-48a0-afa1-e53b673ef981",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1190.2234300193418,
+            "y": 43.756599129973324
+          },
+          "nodeIndex": "Resumo de vendas Anual",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas as tabelas",
+      "zoomValue": 89.192590520569439,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas as tabelas",
+  "defaultDiagram": "Todas as tabelas"
+}
