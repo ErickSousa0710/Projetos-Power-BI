@@ -2098,6 +2098,16 @@
             ],
             "expression": "SUM('Resumo de vendas Anual'[Valor total vendido]) ",
             "lineageTag": "b9896127-5baa-446c-889f-1dd2e77c1805"
+          },
+          {
+            "name": "Medida",
+            "expression": "\"Valor de vendas (R$) por Ano - \"&MIN('Resumo de vendas Anual'[Ano])&\" à \"&MAX('Resumo de vendas Anual'[Ano])",
+            "lineageTag": "a4e7994a-3041-4fe7-a234-aee6bae6c24b"
+          },
+          {
+            "name": "Titulo vendas por ano",
+            "expression": "\"Valor de vendas (R$) por Ano - \"&MIN('Resumo de vendas Anual'[Ano])&\" à \"&MAX('Resumo de vendas Anual'[Ano])",
+            "lineageTag": "cf48721d-94c7-4681-aa6d-65c27f412533"
           }
         ],
         "partitions": [
