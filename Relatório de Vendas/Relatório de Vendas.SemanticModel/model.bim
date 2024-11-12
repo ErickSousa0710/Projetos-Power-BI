@@ -1465,10 +1465,16 @@
                 "value": "Automatic"
               }
             ],
-            "dataType": "string",
+            "changedProperties": [
+              {
+                "property": "DataType"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
             "lineageTag": "487f1a01-d59b-49c1-9d72-9d0198768389",
             "sourceColumn": "Ano",
-            "summarizeBy": "none"
+            "summarizeBy": "sum"
           },
           {
             "name": "Mês",
@@ -1478,10 +1484,16 @@
                 "value": "Automatic"
               }
             ],
-            "dataType": "string",
+            "changedProperties": [
+              {
+                "property": "DataType"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
             "lineageTag": "ad664aa8-bbea-4d66-9196-7e066f8d0c0f",
             "sourceColumn": "Mês",
-            "summarizeBy": "none"
+            "summarizeBy": "sum"
           },
           {
             "name": "Nome do Mês",
@@ -2044,6 +2056,7 @@
         "measures": [
           {
             "name": "Data do Relatório",
+            "displayFolder": "Data",
             "expression": "\"Data do Relatório: \"&FORMAT(TODAY(),\"dd/MM/yyyy\")",
             "lineageTag": "6f7bf3a3-2458-43fb-b074-d3dcff89022a"
           },
@@ -2055,6 +2068,7 @@
                 "value": "{\"isGeneralNumber\":true}"
               }
             ],
+            "displayFolder": "Rotulo",
             "expression": [
               "",
               "",
@@ -2085,6 +2099,7 @@
                 "value": "{\"isGeneralNumber\":true}"
               }
             ],
+            "displayFolder": "Cálculos",
             "expression": "MAX('Resumo de vendas Anual'[Valor total vendido])",
             "lineageTag": "1af183e8-15be-4499-97bc-7ed5614bfdf8"
           },
@@ -2096,18 +2111,36 @@
                 "value": "{\"isGeneralNumber\":true}"
               }
             ],
+            "displayFolder": "Cálculos",
             "expression": "SUM('Resumo de vendas Anual'[Valor total vendido]) ",
             "lineageTag": "b9896127-5baa-446c-889f-1dd2e77c1805"
           },
           {
-            "name": "Medida",
-            "expression": "\"Valor de vendas (R$) por Ano - \"&MIN('Resumo de vendas Anual'[Ano])&\" à \"&MAX('Resumo de vendas Anual'[Ano])",
-            "lineageTag": "a4e7994a-3041-4fe7-a234-aee6bae6c24b"
-          },
-          {
             "name": "Titulo vendas por ano",
+            "displayFolder": "Titulo",
             "expression": "\"Valor de vendas (R$) por Ano - \"&MIN('Resumo de vendas Anual'[Ano])&\" à \"&MAX('Resumo de vendas Anual'[Ano])",
             "lineageTag": "cf48721d-94c7-4681-aa6d-65c27f412533"
+          },
+          {
+            "name": "SUM de Receita últimos 3 meses",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"pt-BR\"}"
+              }
+            ],
+            "displayFolder": "Cálculos",
+            "expression": [
+              "",
+              "",
+              "CALCULATE(",
+              "    SUM(Vendas[Preço Unitário]),",
+              "    dCalendario[Ano] = 2022,",
+              "    dCalendario[Mês] >= 4",
+              ")"
+            ],
+            "formatString": "\"R$\"\\ #,0.00;-\"R$\"\\ #,0.00;\"R$\"\\ #,0.00",
+            "lineageTag": "81d3d13f-dd3d-4aa5-9aec-5f631df6a6c9"
           }
         ],
         "partitions": [
@@ -2161,12 +2194,13 @@
                 "value": "Automatic"
               }
             ],
-            "dataType": "string",
+            "dataType": "int64",
+            "formatString": "0",
             "isDataTypeInferred": true,
             "isNameInferred": true,
             "lineageTag": "f585dd2f-b601-452c-a42b-a91a197eccd3",
             "sourceColumn": "dCalendario[Ano]",
-            "summarizeBy": "none",
+            "summarizeBy": "sum",
             "type": "calculatedTableColumn"
           },
           {
