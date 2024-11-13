@@ -9416,7 +9416,7 @@
             "annotations": [
               {
                 "name": "PBI_FormatHint",
-                "value": "{\"currencyCulture\":\"pt-BR\"}"
+                "value": "{\"isGeneralNumber\":true}"
               }
             ],
             "displayFolder": "Cálculos",
@@ -9425,11 +9425,9 @@
               "",
               "CALCULATE(",
               "    SUM(Vendas[Preço Unitário]),",
-              "    dCalendario[Data] >= MIN(dCalendario[Data]),",
-              "    dCalendario[Data] <= MAX(dCalendario[Data])",
+              "    PARALLELPERIOD(dCalendario[Data], 0, MONTH)",
               ")"
             ],
-            "formatString": "\"R$\"\\ #,0.00;-\"R$\"\\ #,0.00;\"R$\"\\ #,0.00",
             "lineageTag": "81d3d13f-dd3d-4aa5-9aec-5f631df6a6c9"
           },
           {
@@ -9437,26 +9435,22 @@
             "annotations": [
               {
                 "name": "PBI_FormatHint",
-                "value": "{\"currencyCulture\":\"pt-BR\"}"
+                "value": "{\"isGeneralNumber\":true}"
               }
             ],
             "displayFolder": "Cálculos",
             "expression": [
               "",
               "",
-              "VAR vMin =  [MIN Periodo Anterior]",
-              "",
-              "VAR vMax = [MAX Periodo Anterior]",
+              "VAR MesesSelecionados = [Contar seleção]",
               "",
               "RETURN",
               "",
               "CALCULATE(",
               "    SUM(Vendas[Preço Unitário]),",
-              "    dCalendario[Data] >= vMin,",
-              "    dCalendario[Data] <= vMax",
+              "    PARALLELPERIOD(dCalendario[Data], -MesesSelecionados, MONTH)",
               ")"
             ],
-            "formatString": "\"R$\"\\ #,0.00;-\"R$\"\\ #,0.00;\"R$\"\\ #,0.00",
             "lineageTag": "75235114-4137-464d-89ad-8284149af59f"
           },
           {
@@ -9556,97 +9550,17 @@
             "lineageTag": "0948f26e-02aa-4abd-a29e-63fd272538b3"
           },
           {
-            "name": "MIN Periodo Anterior",
+            "name": "MAX Perido anterior",
             "displayFolder": "Data",
-            "expression": [
-              "",
-              "",
-              "// Calcula a diferença em meses entre a menor e a maior data da coluna dCalendario[Data]",
-              "VAR vDiff = DATEDIFF(MIN(dCalendario[Data]), MAX(dCalendario[Data]), MONTH)",
-              "",
-              "// Ajusta a diferença para garantir que ela seja pelo menos 1",
-              "VAR vDiferenca_Final = ",
-              "    IF(",
-              "        vDiff = 0,",
-              "        1,        // Se a diferença em meses for 0, define como 1",
-              "        vDiff     // Caso contrário, mantém a diferença calculada",
-              "    )",
-              "",
-              "// Calcula a data mínima do período anterior, subtraindo `vDiferenca_Final` meses",
-              "// da menor data encontrada na coluna dCalendario[Data]",
-              "VAR vMin = EDATE(MIN(dCalendario[Data]), - vDiferenca_Final)",
-              "",
-              "// Retorna a data mínima calculada do período anterior",
-              "RETURN",
-              "vMin",
-              ""
-            ],
-            "formatString": "General Date",
-            "lineageTag": "1e05cad8-f5c3-40e5-adfb-f729116e1b7c"
+            "expression": "MAX(dCalendario[Mês]) - MAX(dCalendario[Ano]) ",
+            "formatString": "0",
+            "lineageTag": "e9dd496b-11c3-468e-a1ee-d73cb643029d"
           },
           {
-            "name": "MAX Periodo Anterior",
-            "displayFolder": "Data",
-            "expression": [
-              "",
-              "",
-              "// Define a data máxima",
-              "VAR vMax = [MAX]",
-              "",
-              "// Define a data mínima",
-              "VAR vMin = [MIN]",
-              "",
-              "// Calcula a diferença entre as datas mínima e máxima em dias",
-              "VAR vDiff = DATEDIFF(vMin, vMax, DAY)",
-              "",
-              "// Verifica se o intervalo de dias entre as datas excede 29 dias.",
-              "// Se o intervalo for maior que 29 dias, calcula a diferença em meses;",
-              "// caso contrário, adiciona 1 ao intervalo em dias.",
-              "VAR vIF = ",
-              "    IF(",
-              "        vDiff > 29,",
-              "        // Se o intervalo em dias é maior que 29 e está no mesmo mês, retorna 1;",
-              "        // caso contrário, retorna o intervalo em meses.",
-              "        IF(",
-              "            DATEDIFF(vMin, vMax, MONTH) = 0,",
-              "            1,",
-              "            DATEDIFF(vMin, vMax, MONTH)",
-              "        ),",
-              "        vDiff + 1",
-              "    )",
-              "",
-              "// Define a data final baseada no intervalo calculado.",
-              "// Se a diferença é de até 29 dias, subtrai `vIF` de `vMax` (trabalhando com dias);",
-              "// caso contrário, subtrai `vIF` em meses usando a função EDATE.",
-              "VAR vFinal = ",
-              "    SWITCH(",
-              "        TRUE(),",
-              "        vDiff <= 29,",
-              "        vMax - vIF,",
-              "        EDATE(vMax, - vIF)",
-              "    )",
-              "",
-              "// Retorna a data final calculada",
-              "RETURN",
-              "vFinal",
-              ""
-            ],
-            "formatString": "General Date",
-            "lineageTag": "c50a9f6f-3a41-4f7a-a1fa-c8cf130e5a84"
-          },
-          {
-            "name": "MAX",
-            "displayFolder": "Data",
-            "expression": "MAX(dCalendario[Data])",
-            "formatString": "General Date",
-            "lineageTag": "7042ee07-2f9d-47ea-9620-9433e4368800"
-          },
-          {
-            "name": "MIN",
-            "displayFolder": "Data",
-            "expression": "MIN(dCalendario[Data])",
-            "formatString": "General Date",
-            "lineageTag": "7200eb01-b564-4843-b95b-49899c7d14b2"
+            "name": "Contar seleção",
+            "expression": "COUNTROWS(ALLSELECTED(dCalendario[Nome do Mês])) ",
+            "formatString": "0",
+            "lineageTag": "7f818ce8-3bb6-452d-8faf-7021df897269"
           }
         ],
         "partitions": [
