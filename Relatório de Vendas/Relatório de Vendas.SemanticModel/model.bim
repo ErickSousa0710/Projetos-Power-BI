@@ -9558,7 +9558,7 @@
           },
           {
             "name": "Contar seleção",
-            "expression": "COUNTROWS(ALLSELECTED(dCalendario[Nome do Mês])) ",
+            "expression": "COUNT(dCalendario[Nome do Mês])/30",
             "formatString": "0",
             "lineageTag": "7f818ce8-3bb6-452d-8faf-7021df897269"
           }
