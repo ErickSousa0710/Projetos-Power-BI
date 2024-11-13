@@ -12,7 +12,7 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.137.1102.0 (24.10)"
+        "value": "2.138.782.0 (24.11)"
       },
       {
         "name": "PBI_ProTooling",
@@ -2863,7 +2863,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Medidas",
-                    "ConceptualProperty": "SUM de Receita últimos 1 trimestre"
+                    "ConceptualProperty": "SUM de Receita comparativo"
                   }
                 },
                 "State": "Generated",
@@ -2879,7 +2879,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Medidas",
-                    "ConceptualProperty": "SUM de Receita últimos 2 trimestre"
+                    "ConceptualProperty": "SUM de Receita periodo"
                   }
                 },
                 "State": "Generated",
@@ -3258,7 +3258,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Medidas",
-                    "ConceptualProperty": "% 1 e 2 trimestre 2022"
+                    "ConceptualProperty": "% Comparativo"
                   }
                 },
                 "State": "Generated",
@@ -7619,7 +7619,6 @@
             ],
             "dataCategory": "PaddedDateTableDates",
             "dataType": "dateTime",
-            "formatString": "General Date",
             "isHidden": true,
             "isNameInferred": true,
             "lineageTag": "0ce01fd9-f808-44a3-9706-6e36212d62b6",
@@ -7642,7 +7641,6 @@
             "dataCategory": "Years",
             "dataType": "int64",
             "expression": "YEAR([Date])",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "59cd33fa-da3b-49cd-b4a4-be4d0543f68b",
             "summarizeBy": "none",
@@ -7663,7 +7661,6 @@
             "dataCategory": "MonthOfYear",
             "dataType": "int64",
             "expression": "MONTH([Date])",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "75cd0977-7f0a-478e-96e1-4b5e319a2849",
             "summarizeBy": "none",
@@ -7705,7 +7702,6 @@
             "dataCategory": "QuarterOfYear",
             "dataType": "int64",
             "expression": "INT(([MonthNo] + 2) / 3)",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "c2d3110e-b965-4524-a4ce-76994304b46b",
             "summarizeBy": "none",
@@ -7747,7 +7743,6 @@
             "dataCategory": "DayOfMonth",
             "dataType": "int64",
             "expression": "DAY([Date])",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "8fab7c5a-751b-4686-95f2-9c58bafaa6c4",
             "summarizeBy": "none",
@@ -7825,7 +7820,6 @@
             ],
             "dataCategory": "PaddedDateTableDates",
             "dataType": "dateTime",
-            "formatString": "General Date",
             "isHidden": true,
             "isNameInferred": true,
             "lineageTag": "e6ff4437-b9c5-45bd-9d3a-dc4c0750b4a5",
@@ -7848,7 +7842,6 @@
             "dataCategory": "Years",
             "dataType": "int64",
             "expression": "YEAR([Date])",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "76f37c98-0240-4707-a454-38b9b504d633",
             "summarizeBy": "none",
@@ -7869,7 +7862,6 @@
             "dataCategory": "MonthOfYear",
             "dataType": "int64",
             "expression": "MONTH([Date])",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "3195ce73-8c4d-4c46-a6bc-d795920709cd",
             "summarizeBy": "none",
@@ -7911,7 +7903,6 @@
             "dataCategory": "QuarterOfYear",
             "dataType": "int64",
             "expression": "INT(([MonthNo] + 2) / 3)",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "d2578750-1b15-47fc-ac66-c53a5d07a790",
             "summarizeBy": "none",
@@ -7953,7 +7944,6 @@
             "dataCategory": "DayOfMonth",
             "dataType": "int64",
             "expression": "DAY([Date])",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "f7a66814-7771-4c01-ab75-7810e76aaf28",
             "summarizeBy": "none",
@@ -8939,7 +8929,6 @@
             ],
             "dataCategory": "PaddedDateTableDates",
             "dataType": "dateTime",
-            "formatString": "General Date",
             "isHidden": true,
             "isNameInferred": true,
             "lineageTag": "bb509079-3b79-4170-80fd-d2ad956d9ad0",
@@ -8962,7 +8951,6 @@
             "dataCategory": "Years",
             "dataType": "int64",
             "expression": "YEAR([Date])",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "c07be71b-0be1-4765-bb49-2807963d0618",
             "summarizeBy": "none",
@@ -8983,7 +8971,6 @@
             "dataCategory": "MonthOfYear",
             "dataType": "int64",
             "expression": "MONTH([Date])",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "8748fdfa-5d13-43c2-8398-8b0a72d7e334",
             "summarizeBy": "none",
@@ -9025,7 +9012,6 @@
             "dataCategory": "QuarterOfYear",
             "dataType": "int64",
             "expression": "INT(([MonthNo] + 2) / 3)",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "b74507ed-db76-4e4e-937e-21b165952a05",
             "summarizeBy": "none",
@@ -9067,7 +9053,6 @@
             "dataCategory": "DayOfMonth",
             "dataType": "int64",
             "expression": "DAY([Date])",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "02961d5c-b6b4-48df-89f9-b9bd1432fd2d",
             "summarizeBy": "none",
@@ -9145,7 +9130,6 @@
             ],
             "dataCategory": "PaddedDateTableDates",
             "dataType": "dateTime",
-            "formatString": "General Date",
             "isHidden": true,
             "isNameInferred": true,
             "lineageTag": "89b391df-156b-4643-aa42-aabc60bccb52",
@@ -9168,7 +9152,6 @@
             "dataCategory": "Years",
             "dataType": "int64",
             "expression": "YEAR([Date])",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "18931ef2-6c46-4fe0-b523-ea44fc5ac39f",
             "summarizeBy": "none",
@@ -9189,7 +9172,6 @@
             "dataCategory": "MonthOfYear",
             "dataType": "int64",
             "expression": "MONTH([Date])",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "47dc67f7-d6c2-4c3d-a91a-c9a04070d9db",
             "summarizeBy": "none",
@@ -9231,7 +9213,6 @@
             "dataCategory": "QuarterOfYear",
             "dataType": "int64",
             "expression": "INT(([MonthNo] + 2) / 3)",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "22364912-21a6-4657-a3d2-be14d65a8d79",
             "summarizeBy": "none",
@@ -9273,7 +9254,6 @@
             "dataCategory": "DayOfMonth",
             "dataType": "int64",
             "expression": "DAY([Date])",
-            "formatString": "0",
             "isHidden": true,
             "lineageTag": "6577fb85-4c2b-42c6-976e-7b31bc065aa5",
             "summarizeBy": "none",
@@ -9432,7 +9412,7 @@
             "lineageTag": "cf48721d-94c7-4681-aa6d-65c27f412533"
           },
           {
-            "name": "SUM de Receita últimos 2 trimestre",
+            "name": "SUM de Receita periodo",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -9445,31 +9425,38 @@
               "",
               "CALCULATE(",
               "    SUM(Vendas[Preço Unitário]),",
-              "    dCalendario[Ano] = 2022,",
-              "    dCalendario[Trimestre] = 2",
+              "    dCalendario[Data] >= MIN(dCalendario[Data]),",
+              "    dCalendario[Data] <= MAX(dCalendario[Data])",
               ")"
             ],
             "formatString": "\"R$\"\\ #,0.00;-\"R$\"\\ #,0.00;\"R$\"\\ #,0.00",
             "lineageTag": "81d3d13f-dd3d-4aa5-9aec-5f631df6a6c9"
           },
           {
-            "name": "SUM de Receita últimos 1 trimestre",
+            "name": "SUM de Receita comparativo",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
+                "value": "{\"currencyCulture\":\"pt-BR\"}"
               }
             ],
             "displayFolder": "Cálculos",
             "expression": [
               "",
               "",
+              "VAR vMin =  [MIN Periodo Anterior]",
+              "",
+              "VAR vMax = [MAX Periodo Anterior]",
+              "",
+              "RETURN",
+              "",
               "CALCULATE(",
               "    SUM(Vendas[Preço Unitário]),",
-              "    dCalendario[Ano] = 2022,",
-              "    dCalendario[Trimestre] = 1",
+              "    dCalendario[Data] >= vMin,",
+              "    dCalendario[Data] <= vMax",
               ")"
             ],
+            "formatString": "\"R$\"\\ #,0.00;-\"R$\"\\ #,0.00;\"R$\"\\ #,0.00",
             "lineageTag": "75235114-4137-464d-89ad-8284149af59f"
           },
           {
@@ -9478,7 +9465,7 @@
             "expression": [
               "",
               "",
-              "VAR vVariacao = [% 1 e 2 trimestre 2022]",
+              "VAR vVariacao = [% Comparativo]",
               "",
               "RETURN",
               "",
@@ -9497,7 +9484,7 @@
             "expression": [
               "",
               "",
-              "VAR vVariacao = [% 1 e 2 trimestre 2022]",
+              "VAR vVariacao = [% Comparativo]",
               "",
               "RETURN",
               "",
@@ -9510,7 +9497,7 @@
             "lineageTag": "aa55606f-4bc9-48c4-b4b8-c560f9dfa7c9"
           },
           {
-            "name": "% 1 e 2 trimestre 2022",
+            "name": "% Comparativo",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -9521,9 +9508,9 @@
             "expression": [
               "",
               "",
-              "VAR v1Tri = [SUM de Receita últimos 1 trimestre]",
+              "VAR v1Tri = [SUM de Receita comparativo]",
               "",
-              "VAR v2Tri = [SUM de Receita últimos 2 trimestre]",
+              "VAR v2Tri = [SUM de Receita periodo]",
               "",
               "VAR vVariacao = v1Tri/v2Tri",
               "",
@@ -9538,7 +9525,7 @@
             "expression": [
               "",
               "",
-              "VAR vVariacao = [% 1 e 2 trimestre 2022]",
+              "VAR vVariacao = [% Comparativo]",
               "",
               "RETURN",
               "",
@@ -9567,6 +9554,40 @@
               " )"
             ],
             "lineageTag": "0948f26e-02aa-4abd-a29e-63fd272538b3"
+          },
+          {
+            "name": "MIN Periodo Anterior",
+            "displayFolder": "Data",
+            "expression": [
+              "",
+              "",
+              "VAR vDiff = DATEDIFF(MIN(dCalendario[Data]),MAX(dCalendario[Data]),DAY)",
+              "",
+              "VAR vMin =  MIN(dCalendario[Data]) - vDiff",
+              "",
+              "RETURN",
+              "",
+              "vMin"
+            ],
+            "formatString": "General Date",
+            "lineageTag": "1e05cad8-f5c3-40e5-adfb-f729116e1b7c"
+          },
+          {
+            "name": "MAX Periodo Anterior",
+            "displayFolder": "Data",
+            "expression": [
+              "",
+              "",
+              "VAR vDiff = DATEDIFF(MIN(dCalendario[Data]),MAX(dCalendario[Data]),DAY)",
+              "",
+              "VAR vMax = MAX(dCalendario[Data]) - vDiff",
+              "",
+              "RETURN",
+              "",
+              "vMax"
+            ],
+            "formatString": "General Date",
+            "lineageTag": "c50a9f6f-3a41-4f7a-a1fa-c8cf130e5a84"
           }
         ],
         "partitions": [
